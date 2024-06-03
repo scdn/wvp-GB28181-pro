@@ -120,7 +120,7 @@ export default {
         isNotMute: this.isNotMute,
         isResize: false,
         keepScreenOn: true,
-        loadingText: "请稍等, 视频加载中......",
+        loadingText: "H5NVR正在努力加载中...",
         loadingTimeout: 10,
         loadingTimeoutReplay: true,
         loadingTimeoutReplayTimes: 3,
