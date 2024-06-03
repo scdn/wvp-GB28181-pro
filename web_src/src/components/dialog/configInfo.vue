@@ -19,12 +19,12 @@
             <el-tag size="small">{{configInfoData.sip.password}}</el-tag>
           </el-descriptions-item>
         </el-descriptions>
-        <el-descriptions title="版本信息"v-if="configInfoData.version">
-          <el-descriptions-item label="版本">{{configInfoData.version.version}}</el-descriptions-item>
-          <el-descriptions-item label="编译时间">{{configInfoData.version.BUILD_DATE}}</el-descriptions-item>
-          <el-descriptions-item label="GIT版本">{{configInfoData.version.GIT_Revision_SHORT}}</el-descriptions-item>
-          <el-descriptions-item label="GIT最后提交时间">{{configInfoData.version.GIT_DATE}}</el-descriptions-item>
+        <el-descriptions title="技术支持">
+          <el-descriptions-item label="微信">lingtianxinxi</el-descriptions-item>
+          <el-descriptions-item label="电话">0731-85155911</el-descriptions-item>
+          <el-descriptions-item label="FAQ"><el-link href="https://www.h5nvr.com/wvp-28181-pro-faq/" target="_blank">点击查看详情</el-link></el-descriptions-item>
         </el-descriptions>
+        © 2024 长沙零天信息科技有限公司
       </div>
     </el-dialog>
   </div>
