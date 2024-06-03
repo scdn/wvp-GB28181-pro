@@ -79,6 +79,10 @@ export default {
   methods: {
     updatePlayerDomSize() {
       let dom = this.$refs.container;
+      let path = window.location.href;
+      if (path.includes("channeList")){
+        dom.style.minHeight=445+'px';
+      }
       let width = dom.parentNode.clientWidth
       let height = (9 / 16) * width
       console.log(height)
