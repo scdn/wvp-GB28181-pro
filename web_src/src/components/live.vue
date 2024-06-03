@@ -10,6 +10,7 @@
           <i class="el-icon-full-screen btn" :class="{active:spilt==1}" @click="spilt=1"/>
           <i class="el-icon-menu btn" :class="{active:spilt==4}" @click="spilt=4"/>
           <i class="el-icon-s-grid btn" :class="{active:spilt==9}" @click="spilt=9"/>
+          <i class="i-ep-more-filled btn" :class="{active:spilt==16}" @click="spilt=16">16</i>
         </el-header>
         <el-main style="padding: 0;">
           <div style="width: 99%;height: 85vh;display: flex;flex-wrap: wrap;background-color: #000;">
@@ -67,6 +68,9 @@ export default {
           break
         case 9:
           style = {width: '32%', height: '32%'}
+          break
+        case 16:
+          style = {width: '24.5%', height: '24%'}
           break
       }
       this.$nextTick(() => {
@@ -209,6 +213,17 @@ export default {
 };
 </script>
 <style>
+.i-ep-more-filled {
+  --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 1024 1024' width='0.6em' height='0.6em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M336 112h144v160h-144zM544 336h144v144h-144zM112 336h160v144H112zM272 112H120c-4.8 0-8 3.2-8 8V272h160V112zM544 544h144v144h-144zM544 112h144v160h-144zM336 544h144v144h-144zM336 336h144v144h-144zM752 336h160v144H752zM112 544h160v144H112zM904 112H752v160h160V120c0-4.8-3.2-8-8-8zM752 912h152c4.8 0 8-3.2 8-8V752H752v160zM752 544h160v144H752zM112 752v152c0 4.8 3.2 8 8 8H272V752H112zM544 752h144v160h-144zM336 752h144v160h-144z'/%3E%3C/svg%3E");
+  -webkit-mask: var(--un-icon) no-repeat;
+  mask: var(--un-icon) no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  background-color: currentColor;
+  color: inherit;
+  width: 0.8em;
+  height: 0.8em;
+}
 .btn {
   margin: 0 10px;
 
