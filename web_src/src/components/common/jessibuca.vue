@@ -1,6 +1,7 @@
 <template>
   <div ref="container" @dblclick="fullscreenSwich"
        style="width:100%; height: 100%; background-color: #000000;margin:0 auto;position: relative;">
+    <div style="width:100%; padding-top: 56.25%; position: relative;"></div>
     <div class="buttons-box" id="buttonsBox">
       <div class="buttons-box-left">
         <i v-if="!playing" class="iconfont icon-play jessibuca-btn" @click="playBtnClick"></i>
@@ -66,6 +67,9 @@ export default {
   //   });
   //   ro.observe(this.$refs.container);
   // },
+  mounted(){
+    this.updatePlayerDomSize();
+  },
   watch: {
     videoUrl: {
       handler(val, _) {
@@ -79,10 +83,6 @@ export default {
   methods: {
     updatePlayerDomSize() {
       let dom = this.$refs.container;
-      let path = window.location.href;
-      if (path.includes("channeList")){
-        dom.style.minHeight=445+'px';
-      }
       let width = dom.parentNode.clientWidth
       let height = (9 / 16) * width
       console.log(height)
@@ -95,6 +95,7 @@ export default {
       if (width > 0 && height > 0) {
         dom.style.width = width + 'px';
         dom.style.height = height + "px";
+        dom.style.paddingTop = 0;
         console.log(width)
         console.log(height)
       }
@@ -119,7 +120,7 @@ export default {
         isNotMute: this.isNotMute,
         isResize: false,
         keepScreenOn: true,
-        loadingText: "H5NVR正在努力加载中...",
+        loadingText: "请稍等, 视频加载中......",
         loadingTimeout: 10,
         loadingTimeoutReplay: true,
         loadingTimeoutReplayTimes: 3,
