@@ -1,5 +1,6 @@
 ![logo](doc/_media/logo.png)
 # 开箱即用的28181协议视频平台
+本项目基于2.7.0,不再同步原仓库更新,自行优化相关代码,趋于稳定性能
 
 # 编译教程
 [GB28181服务器保姆级编译教程](https://mp.weixin.qq.com/s?__biz=MzkwNzIxMTExNQ==&mid=2247483882&idx=1&sn=8bb6b3e26eab3bccb43eab48cf331294) 
