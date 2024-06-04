@@ -1,6 +1,8 @@
 ![logo](doc/_media/logo.png)
 # 开箱即用的28181协议视频平台
 
+# 编译教程
+[GB28181服务器保姆级编译教程](https://mp.weixin.qq.com/s?__biz=MzkwNzIxMTExNQ==&mid=2247483882&idx=1&sn=8bb6b3e26eab3bccb43eab48cf331294) 
 
 # 应用场景：
 支持浏览器无插件播放摄像头视频。
@@ -84,6 +86,5 @@
 - [X] 支持Mysql，Postgresql，金仓等数据库
 
 
-# 编译教程
-[GB28181服务器保姆级编译教程](https://mp.weixin.qq.com/s?__biz=MzkwNzIxMTExNQ==&mid=2247483882&idx=1&sn=8bb6b3e26eab3bccb43eab48cf331294) 
+
 
