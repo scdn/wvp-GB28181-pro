@@ -22,7 +22,7 @@
         <el-descriptions title="技术支持">
           <el-descriptions-item label="微信">lingtianxinxi</el-descriptions-item>
           <el-descriptions-item label="电话">0731-85155911</el-descriptions-item>
-          <el-descriptions-item label="FAQ"><el-link href="https://www.h5nvr.com/wvp-28181-pro-faq/" target="_blank">点击查看详情</el-link></el-descriptions-item>
+          <el-descriptions-item label="FAQ"><el-link href="https://mp.weixin.qq.com/s/AUOj4RTLXAScWCQatR-neQ" target="_blank">点击查看详情</el-link></el-descriptions-item>
         </el-descriptions>
         © 2024 长沙零天信息科技有限公司
       </div>
