@@ -5,7 +5,7 @@
       <div class="wrap-login100">
 					<span class="login100-form-title p-b-26">H5NVR智慧平台</span>
           <span class="login100-form-title p-b-48">
-						<i class="fa fa-video-camera"></i>
+						<img src="static/fav.png" width="40%">
 					</span>
 
           <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
