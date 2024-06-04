@@ -328,7 +328,7 @@
         this.$router.back()
       },
       getFileShowName(item) {
-          return  moment.unix(item.startTime).format('HH:mm:ss') + "-" + moment.unix(item.endTime).format('HH:mm:ss')
+          return  moment(item.startTime).format('HH:mm:ss') + "-" + moment(item.endTime).format('HH:mm:ss')
       },
       chooseMediaChange() {
 
