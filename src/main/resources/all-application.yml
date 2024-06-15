@@ -50,6 +50,8 @@ spring:
         type: com.zaxxer.hikari.HikariDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://127.0.0.1:3306/wvp?useUnicode=true&characterEncoding=UTF8&rewriteBatchedStatements=true&serverTimezone=PRC&useSSL=false&allowMultiQueries=true
+        # centos请用此条数据库连接,并把上面用#号注释
+        # url: jdbc:mysql://127.0.0.1:3306/wvp?useUnicode=true&characterEncoding=UTF8&rewriteBatchedStatements=true&serverTimezone=PRC&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true
         username: root
         password: root123
         hikari:
@@ -116,7 +118,7 @@ sip:
 # 做为JT1078服务器的配置
 jt1078:
     #[必须修改] 是否开启1078的服务
-    enable: true
+    enable: false
     #[必修修改] 1708设备接入的端口
     port: 21078
     #[可选] 设备鉴权的密码
@@ -125,7 +127,7 @@ jt1078:
 #zlm 默认服务器配置
 media:
     # [必须修改] zlm服务器唯一id，用于触发hook时区别是哪台服务器,general.mediaServerId
-    id:
+    id: H5NVR
     # [必须修改] zlm服务器的内网IP
     ip: 192.168.0.100
     # [可选] 返回流地址时的ip，置空使用 media.ip
@@ -135,9 +137,9 @@ media:
     # [可选] zlm服务器的hook所使用的IP, 默认使用sip.ip
     hook-ip:
     # [必须修改] zlm服务器的http.port
-    http-port: 80
+    http-port: 6080
     # [可选] zlm服务器的http.sslport, 置空使用zlm配置文件配置
-    http-ssl-port:
+    http-ssl-port: 8443
     # [可选] zlm服务器的rtmp.port, 置空使用zlm配置文件配置
     rtmp-port:
     # [可选] zlm服务器的rtmp.sslport, 置空使用zlm配置文件配置
@@ -176,7 +178,7 @@ user-settings:
     # [可选] 服务ID，不写则为000000
     server-id:
     # [可选] 自动点播， 使用固定流地址进行播放时，如果未点播则自动进行点播, 需要rtp.enable=true
-    auto-apply-play: false
+    auto-apply-play: true
     # [可选] 部分设备需要扩展SDP，需要打开此设置
     senior-sdp: false
     # 保存移动位置历史轨迹：true:保留历史数据，false:仅保留最后的位置(默认)
@@ -205,7 +207,7 @@ user-settings:
     # 推流鉴权， 默认开启
     push-authority: true
     # 设备上线时是否自动同步通道
-    sync-channel-on-device-online: false
+    sync-channel-on-device-online: true
     # 是否使用设备来源Ip作为回复IP， 不设置则为 false
     sip-use-source-ip-as-remote-address: false
     # 是否开启sip日志
