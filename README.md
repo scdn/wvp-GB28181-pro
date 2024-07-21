@@ -1,12 +1,15 @@
 
 # 开箱即用的28181协议视频平台
 本项目基于2.7.0,不再同步原仓库更新,自行维护代码,性能趋于稳定
+  
 TODO:
 1. [x] 分屏监控页面增加16分屏
 2. [x] 优化地图,所有设备展示在地图上,点击定位展示对应的设备
 
 # 编译教程
-[GB28181服务器保姆级编译教程](https://mp.weixin.qq.com/s?__biz=MzkwNzIxMTExNQ==&mid=2247483882&idx=1&sn=8bb6b3e26eab3bccb43eab48cf331294) 
+[GB28181服务器保姆级编译教程](https://mp.weixin.qq.com/s?__biz=MzkwNzIxMTExNQ==&mid=2247483882&idx=1&sn=8bb6b3e26eab3bccb43eab48cf331294)   
+
+[wvp-pro webrtc编译部署教程](https://mp.weixin.qq.com/s?__biz=MzkwNzIxMTExNQ==&mid=2247484101&idx=1&sn=7c3ebdb021e03af50061db41ce00d76c)
 
 # 应用场景：
 支持浏览器无插件播放摄像头视频。
