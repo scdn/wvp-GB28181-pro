@@ -22,7 +22,7 @@
         <el-descriptions title="技术支持">
           <el-descriptions-item label="微信">lingtianxinxi</el-descriptions-item>
           <el-descriptions-item label="电话">0731-85155911</el-descriptions-item>
-          <el-descriptions-item label="FAQ"><el-link href="https://mp.weixin.qq.com/s/AUOj4RTLXAScWCQatR-neQ" target="_blank">点击查看详情</el-link></el-descriptions-item>
+          <el-descriptions-item label="QRH"><el-link href="https://mp.weixin.qq.com/s?__biz=MzkwNzIxMTExNQ==&mid=2247484236&idx=1&sn=b632b9439c14817b89424b9390a2371a&chksm=c0ddfb48f7aa725e96da281a818d615c821f3c92c3678c4000b7179e93d80529f9abd38960bd#rd" target="_blank">快速参考手册</el-link></el-descriptions-item>
         </el-descriptions>
         © 2024 长沙零天信息科技有限公司
       </div>
